@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-log-6 mx-auto shadow">
+        <div class="card-header">
+            <h2 class="m-0">Car Insurance Rate Calculator</h2>
+            <h3 class="m=0">(Please Respond to All of the Inquries!)</h3>
+        </div>
+            <div class="card-body">
+                @using (Html.BeginForm("Submit", "Home", FormMethod.Post))
+                {
+                <div class="row no-gutters">
+                    <div class="form-group col-md-12">
+                        <h5>First Name:</h5>
+                        <input name="FirstName" type="text" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h5>Last Name:</h5>
+                        <input name="LastName" type="text" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h5>Email Address:</h5>
+                        <input name="EmailAddress" type="email" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h5>Date of Birth:</h5>
+                        <input name="DOB" type="date" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h5>Car Year (xxxx):</h5>
+                        <input name="CarYear" type="number" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h5>Car Make:</h5>
+                        <input name="CarMake" type="text" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h5>Car Model:</h5>
+                        <input name="CarModel" type="text" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h5>Have you ever had a DUI? (Check for Yes)</h5>
+                        @Html.CheckBox("DUI")
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h5>How many speeding do you have?</h5>
+                        <input name="SpeedTickets" type="number" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h5>Would you like Full Coverage? (Don't check if you would like only Liability)</h5>
+                        @Html.CheckBox("Coverage")
+                    </div>
+                    <button type="submit" class="btn btn-primary col-md-2">Submit</button>
+                </div>
+                }
+        </div>
+    </div>
+</div>
