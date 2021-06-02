@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Student\Desktop\Tech Academy\Tech_Academy_Basic_C_Sharp\CarInsuranceMVC\CarInsuranceMVC\Models\Quotes.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\justi\Documents\ta_windows\Tech_Academy_Basic_C_Sharp\CarInsuranceMVC\CarInsuranceMVC\Models\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

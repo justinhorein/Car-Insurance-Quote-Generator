@@ -13,7 +13,7 @@
           <Property Name="FirstName" Type="varchar" MaxLength="50" />
           <Property Name="LastName" Type="varchar" MaxLength="50" />
           <Property Name="EmailAddress" Type="varchar" MaxLength="100" />
-          <Property Name="Quote" Type="money" />
+          <Property Name="Quote1" Type="decimal" Precision="19" Scale="4" />
         </EntityType>
         <EntityContainer Name="Car_InsuranceModelStoreContainer">
           <EntitySet Name="Quotes" EntityType="Self.Quotes" Schema="dbo" store:Type="Tables" />
@@ -33,7 +33,7 @@
           <Property Name="EmailAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="Quote1" Type="Decimal" Precision="19" Scale="4" />
         </EntityType>
-        <EntityContainer Name="Car_InsuranceEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Car_InsuranceEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Quotes" EntityType="Self.Quote" />
         </EntityContainer>
       </Schema>
@@ -41,7 +41,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Car_InsuranceModelStoreContainer" CdmEntityContainer="Car_InsuranceEntities">
+        <EntityContainerMapping StorageEntityContainer="Car_InsuranceModelStoreContainer" CdmEntityContainer="Car_InsuranceEntities1">
           <EntitySetMapping Name="Quotes">
             <EntityTypeMapping TypeName="Car_InsuranceModel.Quote">
               <MappingFragment StoreEntitySet="Quotes">
@@ -49,7 +49,7 @@
                 <ScalarProperty Name="FirstName" ColumnName="FirstName" />
                 <ScalarProperty Name="LastName" ColumnName="LastName" />
                 <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
-                <ScalarProperty Name="Quote1" ColumnName="Quote" />
+                <ScalarProperty Name="Quote1" ColumnName="Quote1" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
