@@ -13,6 +13,7 @@ namespace CarInsuranceMVC.Controllers
         {
             return View();
         }
+
         public ActionResult Submit(string FirstName, string LastName, string EmailAddress, DateTime DOB, int? CarYear, 
             string CarMake, string CarModel, bool DUI, int? SpeedTickets, bool Coverage)
         {
